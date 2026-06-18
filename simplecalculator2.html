@@ -1,0 +1,37 @@
+<html>
+       <head>
+	           <title>SIMPLE CALCULATOR</title>
+	   <script>
+	            function calc(op){
+				     var x=document.getElementById('v1').value;
+					 var y=document.getElementById('v2').value;
+					 
+					 if(op=='q')
+					document.getElementById('res').value=x/y;
+				
+				     else if(op=='p')
+					document.getElementById('res').value=x*y;
+					
+	                 else if(op=='d')
+					document.getElementById('res').value=x-y;
+					
+					else if(op=='s')
+					document.getElementById('res').value=parseInt(x)+parseInt(y);
+					
+					}
+					
+				
+				 
+	   </script>
+	   </head>
+		<body>
+                 <input id="v1" type="text" placeholder="Enter a number"><br>
+				 <input id="v2" type="text" placeholder="Enter a number"><br>
+				 <input type="text" placeholder="Result" id="res"><br>
+				 <input type="button" value="SUM" onclick="calc('s')">
+				<input type="button" value="diff" onclick="calc('d')">
+				<input type="button" value="prod" onclick="calc('p')">
+				<input type="button" value="quotient" onclick="calc('q')">
+				 
+		</body>
+</html>
