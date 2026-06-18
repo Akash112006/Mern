@@ -1,0 +1,41 @@
+<html>
+       <head>
+	           <title>SIMPLE CALCULATOR</title>
+	   <script>
+	            function quotient(){
+				     var x=document.getElementById('v1').value;
+					 var y=document.getElementById('v2').value;
+					document.getElementById('res').value=x/y;
+				 }
+				 
+				  function sum(){
+				     var x=document.getElementById('v1').value;
+					 var y=document.getElementById('v2').value;
+					document.getElementById('res').value=parseInt(x)+parseInt(y);
+				 }
+				 
+				  function diff(){
+				     var x=document.getElementById('v1').value;
+					 var y=document.getElementById('v2').value;
+					document.getElementById('res').value=x-y;
+				 }
+				  
+				   function prod(){
+				     var x=document.getElementById('v1').value;
+					 var y=document.getElementById('v2').value;
+					document.getElementById('res').value=x*y;
+				 }
+				 
+	   </script>
+	   </head>
+		<body>
+                 <input id="v1" type="text" placeholder="Enter a number"><br>
+				 <input id="v2" type="text" placeholder="Enter a number"><br>
+				 <input type="text" placeholder="Result" id="res"><br>
+				 <input type="button" value="SUM" onclick="sum()">
+				<input type="button" value="diff" onclick="diff()">
+				<input type="button" value="prod" onclick="prod()">
+				<input type="button" value="quotient" onclick="quotient()">
+				 
+		</body>
+</html>

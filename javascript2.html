@@ -12,8 +12,8 @@
 				 {
 				 var num=document.getElementById('v1').value;
 				 var remainder;
-				 var binary="0";
-				 while(num!=0)
+				 var binary="";
+				 while(num>0)
 				 {
 				   remainder=num%2;
 				   binary=remainder+binary;
@@ -21,7 +21,7 @@
 				  }
 				  document.getElementById('res').value=binary;
 				 }
-				
+				 
 				 
 	   </script>
 	   </head>
@@ -29,6 +29,8 @@
 	
 
               <input id="v1" type="text" placeholder="Enter a Number"><br>
+			
+			
 			  <input type="button" value="binary" onclick="tobinary()">
 			  <input type="text" placeholder="Result" id="res">
 		</body>
